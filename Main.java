@@ -4,7 +4,6 @@ public class Main {
     public static void main(String[] args) {
         CarShowroom showroom = new CarShowroom();
         Scanner scanner = new Scanner(System.in);
-        String choice;
         boolean running = true;
 
         while (running) {
@@ -17,8 +16,9 @@ public class Main {
             System.out.println("5. Delete Car");
             System.out.println("0. Exit");
             System.out.print("Choose an option: ");
-            choice = scanner.nextLine();
 
+            String choice;
+            choice = scanner.nextLine();
             switch (choice) {
                 case "1":
                     System.out.print("Enter ID: ");
